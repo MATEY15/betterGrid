@@ -1,0 +1,96 @@
+@import ("../../libs/template/reset.css")
+@import ("../../libs/template/lib")
+@import ("../../libs/template/media")
+
+@import ("libs/*.css")
+@import ("fonts")
+@import ("blocks/**/**")
+
+*
+	box-sizing border-box
+
+html
+	height 100%
+
+body
+	position relative
+	overflow-x: hidden
+	min-width 320px
+	background: #ffffff
+	min-height: 100%
+	&.overflow
+		overflow hidden
+
+#overlayer
+	width 100%
+	height 100%
+	position fixed
+	top 0
+	left 0
+	z-index 11
+	background rgba(41, 53, 77, 0.4)
+	opacity 0
+	visibility hidden
+	trn(.2s)
+	&.is-active
+		opacity 1
+		visibility visible
+
+.align-right
+	float right
+.align-left
+	float left
+
+button
+	cursor pointer
+
+h1, h2, h3, h4, h5, h6
+	font-family: fb
+	font-weight: normal
+
+h1
+	font-size 32px
+h2
+	font-size 28px
+h3
+	font-size 26px
+h4
+	font-size 22px
+h5
+	font-size 18px
+h6
+	font-size 16px
+
+@media (min-width: 1400px)
+	.container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl
+		max-width: 1200px
+
+h3
+	font-family: fm
+	font-size: 24px
+	line-height: 1.5
+	color: #29354D
+	margin-bottom 20px
+p
+	font-family: fl
+	font-size: 16px
+	line-height: 1.6
+	color: #29354D
+
+// Del
+
+.navigation-page
+	position: relative
+
+.navigation-page li
+	margin-bottom: 14px
+
+.navigation-page li a
+	font-family: fm
+	color: #333333
+	font-size: 18px
+	text-decoration: none
+	transition: all .2s ease-out
+
+.navigation-page li:hover a
+	color: #207D87

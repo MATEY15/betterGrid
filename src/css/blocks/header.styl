@@ -1,0 +1,188 @@
+.header
+	position relative
+	background-repeat no-repeat
+	background-position center center
+	background-size cover
+	&:before
+		position absolute
+		top 0
+		left 0
+		display block
+		content ''
+		width 100%
+		height 100%
+		background #29354D
+		opacity .7
+	
+	.header-trim
+		position absolute
+		bottom 0
+		left 0
+		width 100%
+		height 52px
+		background-image url(../img/header-trim.png)
+		background-repeat no-repeat
+		background-position center 0
+
+.link-bottom
+	display: block
+	margin: 45px auto 0
+	width: 18px
+
+.inside
+	min-height: 90px
+	.top-line
+		background #fff
+		border: 1px solid #F3F3F3
+		box-shadow: 0px 6px 44px rgba(15, 20, 16, 0.08)
+	.burger-menu span
+		background #29354D
+	.menu-main li a
+		color #29354D
+	.logo-black
+		display block
+	.logo-white
+		display none
+	.sign-up
+		color: #207D87
+	.button-login
+		color: #207D87
+		border: 1px solid #207D87
+		&:hover
+			background #207D87
+			color #fff
+
+.top-line
+	position fixed
+	width 100%
+	trn(.2s)
+	z-index 100
+	&.fixed
+		top 0
+		left 0
+		background: #F7FBF8
+		box-shadow: 0px 6px 44px rgba(15, 20, 16, 0.08)
+		.burger-menu span
+			background #29354D
+		.menu-main li a
+			color #29354D
+		.logo-black
+			display block
+		.logo-white
+			display none
+		.sign-up
+			color: #207D87
+		.button-login
+			color: #207D87
+			border: 1px solid #207D87
+			&:hover
+				background #207D87
+				color #fff
+
+
+	&.is-active
+		.menu-main li a
+			color: #29354D
+	.container
+		display flex
+		justify-content space-between
+		min-height 90px
+		align-items center
+
+.logo-black
+	display none
+
+.menu-item
+	display flex
+
+.menu-main
+	display flex
+	align-items center
+	ul
+		display flex
+	li
+		&:not(:last-child)
+			margin-right 25px
+		a
+			font-family: fr
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 1.5
+			color: #ffffff
+			text-decoration none
+
+.login-item
+	display flex
+	align-items center
+	margin-left 30px
+	padding-bottom 4px
+	.separator
+		width 1px
+		height 35px
+		background #A3C2C5
+		margin 0 15px
+
+.sign-up
+	font-family: fm
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 1.5
+	letter-spacing: 0.05em
+	color: #ffffff
+	text-decoration none
+
+.burger-menu
+	position relative
+	width 32px
+	height 16px
+	display none
+	flex-direction column
+	margin 15px 0 0 20px
+	user-select none
+	&.is-active
+		span:not(:last-child)
+			margin-bottom 0
+		span:nth-child(1)
+			transform: rotate(45deg)
+			top 8px
+		span:nth-child(2)
+			transform: rotate(-45deg)
+			top 7px
+		span:nth-child(3)
+			opacity 0
+			visibility hidden
+	span
+		position relative
+		display inline-block
+		width 100%
+		height 1px
+		background #ffffff
+		trn(.2s)
+		user-select none
+		&:not(:last-child)
+			margin-bottom 6px
+
+.header-content
+	position relative
+	display flex
+	align-items center
+	text-align center
+	height 745px
+	padding-top 90px
+	padding-bottom 15px
+
+	h1
+		font-family: fb
+		font-size: 76px
+		line-height: 91px
+		color: #FFFFFF
+	
+	p
+		font-size: 36px
+		line-height: 1.4
+		color: #FFFFFF
+		margin-top 30px
+	.button-green
+		margin-top 60px

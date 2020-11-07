@@ -1,0 +1,77 @@
+.button
+	display inline-block
+	min-width 230px
+	height 48px
+	line-height 46px
+	text-align center
+	c cWhite
+	font-family fPoppinsSemiBold
+	font-size 15px
+	text-decoration none
+	background: cPink
+	border-radius 4px
+	cursor pointer
+	transition all .25s ease-out
+	&:hover
+		background: #f85f72
+	@media screen and (max-width: 600px)
+		font-size 12px
+
+.button-green
+	position relative
+	display inline-block
+	color: #29354D
+	font-family: fm
+	font-size: 18px
+	letter-spacing: 0.05em
+	background: #99D2A8
+	border-radius: 200px
+	min-width 190px
+	min-height: 60px
+	padding 20px 30px
+	text-decoration none
+	box-shadow: 0px 6px 24px rgba(52, 71, 57, 0.24)
+	trn(.25s)
+	@media screen and (max-width: 991px)
+		font-size 16px
+		min-width: 160px
+		min-height: 40px
+		padding: 11px 20px
+	&:hover
+		background #EBF6EE
+
+.button-login
+	display flex
+	align-items center
+	justify-content center
+	min-width: 154px
+	min-height: 45px
+	background rgba(255, 255, 255, 0.4)
+	border: 1px solid transparent// rgba(255, 255, 255, 0.4)
+	border-radius: 200px
+	letter-spacing: 0.05em
+	color: #FFFFFF
+	font-family: fm
+	font-size: 14px
+	line-height: 1.5
+	text-decoration none
+	trn(.15s)
+
+.button-border
+	display flex
+	align-items center
+	justify-content center
+	min-width: 240px
+	min-height: 60px
+	font-family: fm
+	font-size: 18px
+	letter-spacing: 0.05em
+	color: #FFFFFF
+	border: 1px solid #FFFFFF
+	box-shadow: 0px 6px 24px rgba(52, 71, 57, 0.24)
+	border-radius: 200px
+	text-decoration none
+	trn(.15s)
+	&:hover
+		background #fff
+		color #29354D

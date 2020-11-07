@@ -1,0 +1,126 @@
+extends layout.pug
+
+block variabl
+  - var title = "About"
+
+block header
+  header.inside
+    include include/top-line
+
+block main
+  main.section_main
+    section.section-breadcrumbs
+      .container
+        nav.breadcrumbs-list
+          ul
+            li
+              a(href="#") Home Page
+            li
+              span About theBetterGrid inside
+    
+    section.section-heading(style="background-image: url(../img/about-heading.jpg)")
+      .container
+        .heading-wrapper
+          h1 Revolutionizing the way you get electricity.
+
+    section.section-custome
+      .container
+        .row
+          .col-md-4
+            .line-block--wrapper
+              .line-block
+                span.line-top
+                span.line-bottom
+                p $0 down, #[br] no fixed term
+          .col-md-8
+            .custome-text
+              P The future of energy is localized – theBetterGrid will help you get there. No complications or stresses; we take care of everything, so that your home or business can enjoy electricity as per usual.
+              p For $0 down and no fixed term, theBetterGrid takes care of all the equipment and installation – you pay a fixed monthly fee for reliable electricity. The only difference you’ll notice will be your annual savings on electricity costs.
+              p If you’re looking to save money spent on electricity delivery fees, then theBetterGrid is the service for you. Low-carbon, on-site, affordable electricity.
+    
+    section.section-offer.offer-green
+      .container
+        .offer-wrapper
+          p.offer-text
+            span.offer-icon
+              img(src="img/lightning.svg", alt="")
+            | Eligible customers save 10% on their electricity costs.
+          a(href="#").button-border See if I'm eligible
+    
+    section.section-mision
+      .container
+        .row
+          .col-md-6
+            .earth-item
+              .earth-images
+                img(src="img/earth-small.jpg", alt="")
+              .earth-text
+                img(src="img/quote-icon.svg", alt="").icon-quote
+                p theBetterGrid dedicated to helping customers save money.
+          .col-md-6
+            .mision-text
+              h3 Mission #[br]and Vision
+              p theBetterGrid offers customers the power of having options.
+              p We are dedicated to helping customers save money, experience the beauty of innovative renewable energy technology, and drive forward progress in the electricity industry.
+
+    section.section-values
+      .container
+        .row
+          .col-md-6
+            .green-scale
+              h3 Our Values
+          .col-md-6
+            .wrapper-value
+              .item-values
+                .icon-values
+                  img(src="img/icon/icon-values1.svg", alt="")
+                p Resilience
+              .item-values
+                .icon-values
+                  img(src="img/icon/icon-values2.svg", alt="")
+                p Innovation
+              .item-values
+                .icon-values
+                  img(src="img/icon/icon-values3.svg", alt="")
+                p Safety
+              .item-values
+                .icon-values
+                  img(src="img/icon/icon-values4.svg", alt="")
+                p Sustainability
+              .item-values
+                .icon-values
+                  img(src="img/icon/icon-values5.svg", alt="")
+                p Customer #[br]Excellence
+
+    section.section-map
+      .container
+        .row
+          .col-md-6
+            img(src="img/canadamap.svg", alt="")
+          .col-md-6
+            .map-content
+              h3 Where #[br]We’re Based
+              p theBetterGrid is headquartered in Cambridge, Ontario and proudly serves customers all across the province, including rural, suburban, agricultural, recreational, and urban residents and business owners.
+    
+    section.section-partner
+      .container
+        .partner-heading
+          h3 Industry Partners
+        .partner-wrapper
+          .partner-items
+            img(src="img/partner/partner1.png", alt="")
+          .partner-items
+            img(src="img/partner/partner2.png", alt="")
+          .partner-items
+            img(src="img/partner/partner3.png", alt="")
+          .partner-items
+            img(src="img/partner/partner4.png", alt="")
+
+    section.section-offer.offer-blue
+      .container
+        .offer-wrapper
+          p.offer-text
+            span.offer-icon
+              img(src="img/lightning.svg", alt="")
+            | How We Operate? 
+          a(href="#").button-border Buy Better Power

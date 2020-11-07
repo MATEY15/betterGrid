@@ -1,0 +1,153 @@
+extends layout.pug
+
+block variabl
+  - var title = "The Better Grid"
+
+block header
+  include include/header
+
+block main
+  main.section_main
+
+    section.section--get-more#second-section
+      .container
+        .row.get-more--wrapper
+          .col-md-6
+            .get-more--form
+              .icon-check
+                img(src="img/check.svg", alt="")
+              h3 Get more information about#[br]Your Better Grid
+              form
+                .input-items
+                  input(type="text", placeholder="Name *")
+                .input-items
+                  input(type="text", placeholder="Email *")
+                .input-items
+                  input(type="text", placeholder="Postal code (optional)")
+                button.button-green Sign Me Up
+          .col-md-6
+            .get-more--content
+              h3 Cancel your hydro bill and enjoy the benefits and savings of localized energy solutions from theBetterGrid.
+              p It’s time to regain control of your home’s energy supply. It’s time to free yourself from expensive delivery charges and unpredictable price increases. By switching to the Better Grid, the power is yours – starting with an at-home localized energy system equipped with solar and batteries.
+      
+      .default-text.text-buy
+        .container
+          .row
+            .col-md-6
+              .text-center
+                h3 The Better Way to Buy Power
+                p Renewable energy technology has come a long way in recent years.
+                  |The time to switch has never been better – with solar and battery technology at its best, the Better Grid allows customers to easily take control of their own electricity generation.
+            .col-md-6
+              .default-text--images
+                img(src="img/buy-img.png", alt="")
+
+    section.section-slider
+      .container
+        .slider-comment
+          .slide-items
+            .row
+              .col-md-5.slide-images--col
+                .slide-images
+                  .quote-icon
+                    img(src="img/quote-icon.svg", alt="")
+                  img(src="img/slide1.png", alt="")
+              .col-md-7
+                .slide-text
+                  .slide-rating
+                    img(src="img/Rait.png", alt="")
+                    //- span
+                    //-   +iconSvg('70', '66', '0 0 70 66', 'icon-star2')
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                  p “Nothing compares to energy independence. My property generates its own electricity, my monthly cost of energy is lower, and I am yet to experience an outage. As I get older I am also more conscious of my impact on the environment and it feels good to have less impact on the earth all the while saving money and not changing my lifestyle. I am proud of my decision and I recommend theBetterGrid to everyone”
+                  .author-quote
+                    p Doug W.
+                    span Georgian Bay
+          .slide-items
+            .row
+              .col-md-5.slide-images--col
+                .slide-images
+                  .quote-icon
+                    img(src="img/quote-icon.svg", alt="")
+                  img(src="img/slide1.png", alt="")
+              .col-md-7
+                .slide-text
+                  .slide-rating
+                    img(src="img/Rait.png", alt="")
+                    //- span
+                    //-   +iconSvg('70', '66', '0 0 70 66', 'icon-star2')
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                    //- span
+                  p “Nothing compares to energy independence. My property generates its own electricity, my monthly cost of energy is lower, and I am yet to experience an outage. As I get older I am also more conscious of my impact on the environment and it feels good to have less impact on the earth all the while saving money and not changing my lifestyle. I am proud of my decision and I recommend theBetterGrid to everyone”
+                  .author-quote
+                    p Doug W.
+                    span Georgian Bay
+
+    section.section-step
+      .container
+        .strep-wrapper.row
+          .col-md-3
+            .step-items
+              .step-items--images
+                .images-step
+                  img(src="img/images-step1.jpg", alt="")
+                .icon-step--wrap
+                  .icon-step
+                    img(src="img/icon-step/icon-step1.svg", alt="")
+              .step-items--content
+                h3 Zero Upfront Cost, Cancel Anytime
+                p With no down payment required and no fixed term, there is nothing to hold you back from puttingthe power in your hands.
+          .col-md-3
+            .step-items
+              .step-items--images
+                .images-step
+                  img(src="img/images-step2.jpg", alt="")
+                .icon-step--wrap
+                  .icon-step
+                    img(src="img/icon-step/icon-step2.svg", alt="")
+              .step-items--content
+                h3 Reliable Power Production
+                p Avoid outages due to storms or accidents by localizing your energy source. On-site generation allows you to skip blackouts and enjoy reliable energy even when the grid is down.
+          .col-md-3
+            .step-items
+              .step-items--images
+                .images-step
+                  img(src="img/images-step3.jpg", alt="")
+                .icon-step--wrap
+                  .icon-step
+                    img(src="img/icon-step/icon-step3.svg", alt="")
+              .step-items--content
+                h3 Offering Customized Solutions
+                p Solutions that make the most sense for your home and lifestyle – whether it be roof-mounted, gazebo or car-park solar arrays, generator system integration, and more for your new localized energy source.
+          .col-md-3
+            .step-items
+              .step-items--images
+                .images-step
+                  img(src="img/images-step4.jpg", alt="")
+                .icon-step--wrap
+                  .icon-step
+                    img(src="img/icon-step/icon-step4.svg", alt="")
+              .step-items--content
+                h3 No More Expensive Charges
+                p Paying expensive fixed fees for long-distance electricity delivery is a thing of the past. Save money on your bill while generating and storing your own renewable, reliable power from the comforts of your own property.
+
+    section.section-started(style="background-image: url(../img/started.jpg)")
+      .container
+        .started-wrapper
+          h3 Get started on your switch to theBetterGrid
+          a(href="#").button-green Get started for $0

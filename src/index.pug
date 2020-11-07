@@ -1,0 +1,19 @@
+extends layout.pug
+
+block variabl
+	- var title = "The Better Grid"
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		.container
+			ul.navigation-page
+				li
+					a(href="home.html") Home
+				li
+					a(href="about.html") About
+
+			+iconSvg('34', '32', '0 0 34 32', 'icon-star')
